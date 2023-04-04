@@ -24,9 +24,9 @@ terraform validate
 sudo terraform plan -out plan
 sudo terraform apply "plan"
 git checkout Ansible
-nano inventory
-ansible-playbook wp-ubuntu.yml 
-ansible-playbook wp-ubuntu.yml -i inventory 
+echo "107.20.100.18" > inventory
+echo "100.24.67.247" >> inventory
+echo "54.162.169.169" >> inventory  
 ssh ubuntu@107.20.100.18
 ssh ubuntu@100.24.67.247
 ssh ubuntu@54.162.169.169
