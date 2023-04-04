@@ -69,7 +69,7 @@ resource "aws_subnet" "public_subnet" {
 
   tags = {
     Name = "wordpress-public-${count.index + 1}"
-   
+
   }
 }
 
