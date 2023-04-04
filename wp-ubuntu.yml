@@ -1,6 +1,7 @@
 ---
 - name: Deploy WordPress
   hosts: all
+  user: ubuntu
   gather_facts: yes
   become: true
   vars_files:
