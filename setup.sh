@@ -23,6 +23,7 @@ terraform fmt
 terraform validate
 sudo terraform plan -out plan
 sudo terraform apply "plan"
+git commit -a
 git checkout Ansible
 echo "107.20.100.18" > inventory
 echo "100.24.67.247" >> inventory
