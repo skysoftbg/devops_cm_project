@@ -10,7 +10,7 @@ resource "aws_key_pair" "wordpress_auth" {
 
 resource "aws_instance" "wordpress" {
   count                  = var.instance_count
-  ami                    = "ami-0b7af114fb404cd23"
+  ami                    = "ami-007855ac798b5175e"
   instance_type          = "t3.micro"
   vpc_security_group_ids = [aws_security_group.sg.id]
   subnet_id              = aws_subnet.public_subnet[count.index].id
