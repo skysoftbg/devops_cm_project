@@ -14,4 +14,6 @@ Steps to Perform:
 4.	Execute scripts to perform installation of complete WordPress environment
 5.	Validate installation using the public IP of VM by accessing WordPress application
 
+Host OS - Ubuntu
 Userd OS - Ubuntu 22.04 on AWS EC2
+Setuo.sh will create 3 instancess on AWS and install Wordpress + LAMP with Ansible.
